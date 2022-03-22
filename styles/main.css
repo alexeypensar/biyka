@@ -1,11 +1,95 @@
-@import url("reset.css");
-@import url("__fonts.styl");
-@import url("__variables.styl");
-@import url("__helpers.styl");
-@import url("__animations.styl");
-@import url("__adaptive.styl");
+@import 'reset.css';
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url("fonts/raleway-v26-latin_cyrillic-regular.woff2") format('woff2'), url("fonts/raleway-v26-latin_cyrillic-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''), url("fonts/raleway-v26-latin_cyrillic-500.woff2") format('woff2'), url("fonts/raleway-v26-latin_cyrillic-500.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(''), url("fonts/raleway-v26-latin_cyrillic-600.woff2") format('woff2'), url("fonts/raleway-v26-latin_cyrillic-600.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''), url("fonts/raleway-v26-latin_cyrillic-700.woff2") format('woff2'), url("fonts/raleway-v26-latin_cyrillic-700.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''), url("fonts/playfair-display-v28-latin_cyrillic-500.woff2") format('woff2'), url("fonts/playfair-display-v28-latin_cyrillic-500.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''), url("fonts/playfair-display-v28-latin_cyrillic-700.woff2") format('woff2'), url("fonts/playfair-display-v28-latin_cyrillic-700.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(''), url("fonts/playfair-display-v28-latin_cyrillic-900.woff2") format('woff2'), url("fonts/playfair-display-v28-latin_cyrillic-900.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+@media screen and (max-width: 1439.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    max-width: 576px;
+  }
+}
 html {
   scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .container {
   max-width: 1200px;
@@ -13,4 +97,7 @@ html {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+h1 {
+  font-family: 'Playfair Display';
 }
