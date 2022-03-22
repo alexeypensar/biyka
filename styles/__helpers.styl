@@ -14,3 +14,50 @@
 }
 
 
+.main-button {
+	width: 300px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 60px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $color-green;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-decoration: none;
+	margin: 560px auto 0 auto;
+	cursor: pointer;
+	overflow:hidden;
+	transform: translateY(0);
+	transition: all 0.3s ease;
+	border: 2px solid #FFF;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 0;
+		background-color: $color-green;
+		left: 0;
+		bottom: 0;
+		transition: all .3s;
+		opacity: 0.1;
+	}
+
+	&:hover, &:focus {
+		transform: translateY(-5px);
+		transition: all 0.3s ease;
+		background-color: transparent;
+		color: #ffffff;
+
+
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
