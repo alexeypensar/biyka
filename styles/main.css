@@ -98,25 +98,19 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-body {
-  height: 3000px;
-}
-header {
-  height: 1200px;
-}
-.scene {
+.parallax {
   position: absolute;
   width: 100%;
   transform: translateY(var(--translateY));
   will-change: transform;
 }
-.scene:nth-child(1) {
+.parallax_first {
   top: -350px;
 }
-.scene:nth-child(3) {
+.parallax_third {
   top: 400px;
 }
-.h1 {
+.header__heading {
   top: 170px;
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -128,7 +122,7 @@ header {
   color: #fff;
   opacity: 0.9;
 }
-span {
+.header__subheading {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 500;
@@ -139,4 +133,23 @@ span {
   color: #fff;
   opacity: 0.9;
   top: 500px;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.header__link_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 93px;
+}
+.header__link_phone {
+  margin-left: 100px;
+  margin-right: 32px;
 }

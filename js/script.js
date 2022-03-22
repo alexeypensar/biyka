@@ -1,7 +1,7 @@
 // More information about this technique/pen:
 // https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7#.o1kkd4cte
 
-document.querySelectorAll('.scene').forEach((elem) => {
+document.querySelectorAll('.parallax').forEach((elem) => {
 
     const modifier = elem.getAttribute('data-modifier')
 
