@@ -174,3 +174,30 @@ body {
 	line-height: 130%;
 	text-transform: uppercase;
 }
+
+.routes__buttons {
+	width: 100%;
+	margin-top: -520px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+
+}
+
+.routes__button {
+	width: 166px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	border: 2px solid $color-green;
+	&:hover, &:focus {
+		color: $color-green;
+	}
+	&_active {
+		background-color: $color-green;
+		color: #FFF;
+	}
+}
+
+footer {
+	height: 900px;
+}

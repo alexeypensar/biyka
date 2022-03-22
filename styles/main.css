@@ -257,3 +257,27 @@ body {
   line-height: 130%;
   text-transform: uppercase;
 }
+.routes__buttons {
+  width: 100%;
+  margin-top: -520px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.routes__button {
+  width: 166px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  border: 2px solid #0c4e42;
+}
+.routes__button:hover,
+.routes__button:focus {
+  color: #0c4e42;
+}
+.routes__button_active {
+  background-color: #0c4e42;
+  color: #fff;
+}
+footer {
+  height: 900px;
+}
