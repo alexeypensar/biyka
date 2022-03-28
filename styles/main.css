@@ -77,12 +77,12 @@ input[type="radio"].visually-hidden {
   align-items: center;
   position: relative;
   text-decoration: none;
-  margin: 560px auto 0 auto;
   cursor: pointer;
   overflow: hidden;
   transform: translateY(0);
   transition: all 0.3s ease;
   border: 2px solid #fff;
+  margin: 560px auto 0 auto;
 }
 .main-button::before {
   content: "";
@@ -337,13 +337,21 @@ body {
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 .route__duration {
   font-weight: 600;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .route__text {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
+}
+.route .main-button {
+  margin-top: 15px;
+  border: 2px solid #0c4e42;
+}
+.route .main-button:hover,
+.route .main-button:focus {
+  color: #0c4e42;
 }
