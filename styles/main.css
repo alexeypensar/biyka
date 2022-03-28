@@ -405,9 +405,6 @@ body {
 .map__text {
   margin-bottom: 50px;
 }
-.footer-background {
-  background: url("../img/footer-bg.png") no-repeat center center;
-}
 .information {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -459,16 +456,20 @@ body {
 }
 .order__form {
   background: #fff;
-  border: 1px solid #fff;
-  box-sizing: border-box;
   border-radius: 10px;
   margin-left: 170px;
   margin-right: 170px;
+  padding: 21px 20px;
+}
+.order__inner {
+  border: 1px solid #ededed;
+  padding: 48px 60px;
+  border-radius: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 68px 80px;
 }
 .order__row {
   display: flex;
@@ -501,4 +502,77 @@ body {
 .order__button:focus {
   color: #0c4e42;
   transition: all 0.3s ease;
+}
+.footer {
+  padding-top: 75px;
+  padding-bottom: 36px;
+}
+main {
+  background: url("../img/footer-background.png") no-repeat bottom center, url("../img/footer-bg.png") no-repeat bottom center;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__phone {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 58px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #0c4e42 0%, #5dcec6 100%);
+  background-size: 0 2px;
+  background-position: 0 96%;
+  padding: 5px 0;
+  transition: background-size 0.4s cubic-bezier(0.51, 0.19, 0.27, 0.88) 0s;
+}
+.footer__phone:not(.header__link_logo):hover,
+.footer__phone:not(.header__link_logo):focus {
+  background-size: 100% 2px;
+}
+.footer__nav {
+  width: 100%;
+  text-align: center;
+}
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item + .footer__item {
+  margin-left: 95px;
+}
+.footer__link {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #0c4e42 0%, #5dcec6 100%);
+  background-size: 0 2px;
+  background-position: 0 96%;
+  padding: 5px 0;
+  transition: background-size 0.4s cubic-bezier(0.51, 0.19, 0.27, 0.88) 0s;
+}
+.footer__link:not(.header__link_logo):hover,
+.footer__link:not(.header__link_logo):focus {
+  background-size: 100% 2px;
+}
+.footer__copyright {
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+/* white */
+  color: #fff;
 }
