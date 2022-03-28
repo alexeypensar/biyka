@@ -247,7 +247,28 @@
         </section>
 
         <section class="order container">
-            <h2 class="section__heading"></h2>
+            <h2 class="section__heading">заказать экскурсию</h2>
+
+            <form class="order__form" action="order.php" method="post">
+
+                <div class="order__row">
+                    <input type="text" class="order__input" placeholder="Имя">
+                    <input type="text" class="order__input" placeholder="Телефон">
+                    <input type="text" class="order__input" placeholder="Маршрут (если выбрали)">
+                </div>
+
+                <div class="order__row">
+                    <input type="text" class="order__input" placeholder="Количество взрослых">
+                    <input type="text" class="order__input" placeholder="Количество детей">
+                    <input type="text" class="order__input" placeholder="Желаемые даты">
+                </div>
+
+                <button class="main-button order__button" type="submit">Забронировать маршрут</button>
+
+                <label><input type="checkbox" required checked>Согласен с условиями <a href="policy.html">обработки персональных данных</a></label>
+
+
+            </form>
         </section>
     </div>
 

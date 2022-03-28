@@ -286,6 +286,7 @@ body {
   font-size: 60px;
   line-height: 100%;
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 .section__subheading {
   font-weight: 700;
@@ -404,6 +405,9 @@ body {
 .map__text {
   margin-bottom: 50px;
 }
+.footer-background {
+  background: url("../img/footer-bg.png") no-repeat center center;
+}
 .information {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -445,4 +449,56 @@ body {
 }
 .information__item:not(:last-child) {
   margin-bottom: 25px;
+}
+.order {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.order .section__heading {
+  text-align: center;
+}
+.order__form {
+  background: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 170px;
+  margin-right: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 68px 80px;
+}
+.order__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.order__input {
+  background: #fff;
+  border: 1px solid #0c4e42;
+  box-sizing: border-box;
+  border-radius: 60px;
+  height: 60px;
+  padding: 20px 30px;
+}
+.order__button {
+  margin-top: 0;
+  background: #0c4e42;
+  border: 1px solid #0c4e42;
+  box-sizing: border-box;
+  border-radius: 60px;
+  width: 100%;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.order__button:hover,
+.order__button:focus {
+  color: #0c4e42;
+  transition: all 0.3s ease;
 }

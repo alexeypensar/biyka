@@ -164,6 +164,7 @@ body {
 	font-size: 60px;
 	line-height: 100%;
 	margin-bottom: 50px;
+	text-transform: uppercase;
 }
 
 .section__subheading {
@@ -305,10 +306,10 @@ body {
 	margin-bottom: 50px;
 }
 
-//.footer-background {
-//	background: url('../img/footer-bg.png') no-repeat center center;
-//
-//}
+.footer-background {
+	background: url('../img/footer-bg.png') no-repeat center center;
+
+}
 
 .information {
 	padding-top: 75px;
@@ -363,3 +364,70 @@ body {
 		margin-bottom: 25px;
 	}
 }
+
+.order {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.order .section__heading {
+	text-align: center;
+}
+
+
+
+.order__form {
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 170px;
+	margin-right: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 68px 80px;
+}
+
+.order__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+//.order__input:not(:last-child) {
+//	margin-right: 25px;
+//}
+
+.order__input {
+	background: #FFFFFF;
+	border: 1px solid #0C4E42;
+	box-sizing: border-box;
+	border-radius: 60px;
+	height: 60px;
+	padding: 20px 30px;
+}
+
+
+.order__button {
+	margin-top: 0;
+	background: #0C4E42;
+	border: 1px solid #0C4E42;
+	box-sizing: border-box;
+	border-radius: 60px;
+	width: 100%;
+	color: white;
+	transition: all 0.3s ease;
+	margin-bottom: 15px;
+
+	&:hover, &:focus {
+		color: $color-green;
+		transition: all 0.3s ease;
+	}
+}
+
+//todo кнопка неадекватно себя ведёт, когда наводишься на самый низ 
