@@ -268,21 +268,43 @@
 
             <div class="order__inner">
                 <div class="order__row">
-                    <input type="text" class="order__input" placeholder="Имя">
-                    <input type="text" class="order__input" placeholder="Телефон">
-                    <input type="text" class="order__input" placeholder="Маршрут (если выбрали)">
+                    <input type="text" class="order__input" placeholder="Имя" required>
+                    <input type="tel" class="order__input" placeholder="Телефон" required>
+                    <div class="order__input_route">
+                        <select class="order__input order__select" name="routeNumber" id="routeNumber">
+                            <option value="not selected" selected disabled>Маршрут (если выбрали)</option>
+                            <option value="1">1 день</option>
+                            <option value="2">2 дня</option>
+                            <option value="3">3 дня</option>
+                            <option value="4">4 дня</option>
+                            <option value="5">5 дней</option>
+                            <option value="6">6 дней</option>
+                            <option value="7">7 дней</option>
+                            <option value="hours">почасовые прогулки</option>
+                        </select>
+                    </div>
+<!--                    <input type="text" class="order__input" placeholder="Маршрут (если выбрали)">-->
                 </div>
 
                 <div class="order__row">
-                    <input type="text" class="order__input" placeholder="Количество взрослых">
-                    <input type="text" class="order__input" placeholder="Количество детей">
-                    <input type="text" class="order__input" placeholder="Желаемые даты">
+                    <input type="number" class="order__input" placeholder="Количество взрослых" required>
+                    <input type="number" class="order__input" placeholder="Количество детей">
+                    <div class="order__input_date">
+                        <input class="order__input"placeholder="Желаемые даты" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+                    </div>
                 </div>
 
                 <button class="main-button order__button" type="submit">Забронировать маршрут</button>
 
-                <label><input type="checkbox" required checked>Согласен с условиями <a href="policy.html">обработки
-                    персональных данных</a></label></div>
+
+                <div class="order__checkbox">
+                    <input type="checkbox" id="orderCheckbox" required checked>
+                    <label for="orderCheckbox">
+                        Согласен с условиями <a class="policy-link" href="policy.html">обработки
+                        персональных данных</a>
+                    </label></div>
+
+            </div>
 
 
         </form>
@@ -333,7 +355,8 @@
         thumbs: {
             swiper: swiper,
         },
-        autoplay: true
+        autoplay: true,
+        loop: true
     });
 
     var swiperAbout = new Swiper(".about__gallery", {
