@@ -106,6 +106,40 @@ input[type="radio"].visually-hidden {
 .main-button:focus::before {
   width: 100%;
 }
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 @media screen and (max-width: 1439.98px) {
   .container {
     max-width: 1200px;
@@ -241,9 +275,6 @@ body {
   transform: scale(1.15);
   transition: transform 0.3s ease;
 }
-.routes {
-  margin-top: 400px;
-}
 .section__heading {
   font-family: 'Playfair Display';
   font-weight: 500;
@@ -257,6 +288,10 @@ body {
   line-height: 130%;
   text-transform: uppercase;
 }
+.routes {
+  margin-top: 400px;
+  padding-bottom: 75px;
+}
 .routes__buttons {
   width: 100%;
   margin-top: -520px;
@@ -264,6 +299,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 55px;
 }
 .routes__button {
   width: 166px;
@@ -278,6 +314,20 @@ body {
   background-color: #0c4e42;
   color: #fff;
 }
-footer {
-  height: 900px;
+.routes__items {
+  width: 100%;
+}
+.route {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.route__images {
+  width: 50%;
+  margin-right: 65px;
+}
+.route__description {
+  width: 50%;
 }

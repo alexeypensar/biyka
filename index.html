@@ -10,7 +10,10 @@
     <!--цвет вкладки в chrome-->
     <!--    todo изменить цвет вкладки-->
     <meta name="theme-color" content="#9CC2CE">
-
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css">
 
 
@@ -81,8 +84,42 @@
         </div>
         <div class="routes__items">
             <article class="route">
-                <div class="route__images">
 
+                <div class="route__images">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/1.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/2.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/3.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/4.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/1.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/2.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/3.jpg"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/routes/5/4.jpg"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="route__description">
                     <h3 class="route__heading">"К священному озеру Манас" на 5 дней</h3>
@@ -91,7 +128,8 @@
                         Ваше путешествие лежит на вершину горы к истоку реки Бийка. По пути вы заглянете в природную
                         карстовую пещеру, попробуете себя в езде рысью, насладитесь ароматами лугов, тайги,
                         приготовленной на костре пищей. После ночёвки на вершине, завтрака и радиальных выходов по
-                        желанию, вы двинетесь в обратный путь. Внизу, в кемпинге Бийка, вас будет ждать баня и посиделки
+                        желанию, вы двинетесь в обратный путь. Внизу, в кемпинге Бийка, вас будет ждать баня и
+                        посиделки
                         у костра.
                     </p>
                     <p><strong>Выезд:</strong> каждую пятницу, 9:00</p>
@@ -104,13 +142,15 @@
 
                     <p class="route__text">
                         Каждый конный поход, кроме однодневного, подразумевает вечернее возвращение и баню. Если вы
-                        прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать ночёвку (в
+                        прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать ночёвку
+                        (в
                         домике или в палатке) или вечерний трансфер.
                     </p>
 
                 </div>
             </article>
         </div>
+
     </section>
 
 
@@ -120,6 +160,23 @@
 
 
 <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
