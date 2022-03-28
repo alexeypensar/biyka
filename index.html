@@ -154,6 +154,57 @@
 
     </section>
 
+    <section class="about container">
+        <h2 class="section__heading">О кемпинге</h2>
+
+        <div class="about__items">
+            <article class="about__text">
+                <h3 class="about__heading">Мы рады вам предложить:</h3>
+                <ul class="about__list">
+                    <li class="about__offer">Конные прокаты и экскурсии</li>
+                    <li class="about__offer">Баня</li>
+                    <li class="about__offer">Проживание в домиках от 600р. до 2500р. за домик</li>
+                    <li class="about__offer">Осмотр обломков космических ракет, старой восстановленной дамбы</li>
+                    <li class="about__offer">Услуги автомобиля УАЗ-Буханка</li>
+                    <li class="about__offer">Гарантия безопасности всадников: каждому выдается шлем для верховой езды, опытные и внимательные инструкторы-конюхи, безопасные маршруты.
+                    </li>
+                    <li class="about__offer">Страховка</li>
+                    <li class="about__offer">Удобный выезд к смотровым площадкам.
+                    </li>
+                    <li class="about__offer">Разумные цены. </li>
+                    <li class="about__offer">Перед началом путешествия для вас проведут вводный инструктаж и ознакомят с техникой безопасности на маршруте, познакомят с лошадьми и, по возможности, дадут выбрать ту, которая подходит именно вам.</li>
+                </ul>
+            </article>
+
+            <div class="about__gallery swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/about/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/about/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/about/3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/about/5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/about/6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/about/7.jpg" alt="">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -180,6 +231,23 @@
             swiper: swiper,
         },
         autoplay: true
+    });
+
+    var swiperAbout = new Swiper(".about__gallery", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: ["-120%", 0, -500],
+            },
+            next: {
+                shadow: true,
+                translate: ["120%", 0, -500],
+            },
+        },
+        autoplay: true,
+        loop: true
     });
 </script>
 <script src="js/script.js"></script>
