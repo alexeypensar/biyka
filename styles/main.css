@@ -115,6 +115,7 @@ input[type="radio"].visually-hidden {
 .swiper-slide {
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 .mySwiper2 {
   height: 80%;
@@ -128,7 +129,8 @@ input[type="radio"].visually-hidden {
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.6;
+  border-radius: 10px;
 }
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
@@ -330,4 +332,18 @@ body {
 }
 .route__description {
   width: 50%;
+}
+.route__heading {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+.route__duration {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.route__text {
+  margin-bottom: 12px;
 }
