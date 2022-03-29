@@ -425,6 +425,11 @@ body {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.about__info {
+  margin-bottom: 40px;
+  width: 80%;
+  font-size: 18px;
+}
 .about__items {
   display: flex;
   flex-direction: row;
@@ -440,7 +445,7 @@ body {
 }
 .about__heading {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .about__offer {
@@ -460,12 +465,37 @@ body {
   height: 10px;
   border-radius: 100%;
 }
+.discount {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: linear-gradient(to right, rgba(37,50,56,0.6) 0%, rgba(12,78,66,0.4) 50%, rgba(12,78,66,0.1) 100%), url("../img/discount-bg-4.jpg") no-repeat top left;
+  background-size: cover;
+}
+.discount .section__heading {
+  color: #fff;
+}
+.discount__text {
+  width: 45%;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.discount__text strong {
+  font-weight: 800;
+}
 .map {
   padding-top: 75px;
   padding-bottom: 75px;
 }
 .map__text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+.map__info {
+  margin-bottom: 20px;
+}
+.map__info strong {
+  margin-bottom: 15px;
 }
 .information {
   padding-top: 75px;
