@@ -117,7 +117,12 @@ input[type="radio"].visually-hidden {
   background-position: center;
   border-radius: 10px;
 }
-.route .route__gallery {
+.route .route__gallery,
+.route .route__gallery2,
+.route .route__gallery3,
+.route .route__gallery4,
+.route .route__gallery5,
+.route .route__gallery6 {
   height: 80%;
   width: 100%;
 }
@@ -128,18 +133,33 @@ input[type="radio"].visually-hidden {
   object-fit: cover;
   border-radius: 10px;
 }
-.route .mySwiperRoute {
+.route .mySwiperRoute,
+.route .mySwiperRoute2,
+.route .mySwiperRoute3,
+.route .mySwiperRoute4,
+.route .mySwiperRoute5,
+.route .mySwiperRoute6 {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
 }
-.route .mySwiperRoute .swiper-slide {
+.route .mySwiperRoute .swiper-slide,
+.route .mySwiperRoute2 .swiper-slide,
+.route .mySwiperRoute3 .swiper-slide,
+.route .mySwiperRoute4 .swiper-slide,
+.route .mySwiperRoute5 .swiper-slide,
+.route .mySwiperRoute6 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.6;
   border-radius: 10px;
 }
-.route .mySwiperRoute .swiper-slide-thumb-active {
+.route .mySwiperRoute .swiper-slide-thumb-active,
+.route .mySwiperRoute2 .swiper-slide-thumb-active,
+.route .mySwiperRoute3 .swiper-slide-thumb-active,
+.route .mySwiperRoute4 .swiper-slide-thumb-active,
+.route .mySwiperRoute5 .swiper-slide-thumb-active,
+.route .mySwiperRoute6 .swiper-slide-thumb-active {
   opacity: 1;
 }
 .about__gallery .swiper-slide {

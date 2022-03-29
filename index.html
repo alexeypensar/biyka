@@ -76,19 +76,19 @@
         <h2 class="section__subheading">Выберите желаемую продолжительность похода:</h2>
 
         <div class="routes__buttons">
-            <button class="routes__button main-button">1 день</button>
-            <button class="routes__button main-button">2 дня</button>
-            <button class="routes__button main-button">3 дня</button>
-            <button class="routes__button main-button">4 дня</button>
-            <button class="routes__button routes__button_active main-button">5 дней</button>
-            <button class="routes__button main-button">6 дней</button>
-            <button class="routes__button main-button">7 дней</button>
+            <button class="routes__button main-button" id="routeButton1">1 день</button>
+            <button class="routes__button main-button" id="routeButton2">2 дня</button>
+            <button class="routes__button main-button" id="routeButton3">3 дня</button>
+            <button class="routes__button main-button" id="routeButton4">5 дней</button>
+            <button class="routes__button main-button" id="routeButton5">6 дней</button>
+            <!--            <button class="routes__button main-button">6 дней</button>-->
+            <button class="routes__button main-button" id="routeButton6">7 дней</button>
         </div>
         <div class="routes__items">
             <div class="swiper routes__gallery">
                 <div class="swiper-wrapper">
 
-                    <div class="route swiper-slide">
+                    <article class="route swiper-slide" id="route1">
 
                         <div class="route__images">
                             <div class="swiper route__gallery">
@@ -106,6 +106,7 @@
                                         <img src="img/routes/5/4.jpg"/>
                                     </div>
                                 </div>
+
                             </div>
 
 
@@ -127,25 +128,22 @@
                             </div>
                         </div>
                         <div class="route__description">
-                            <h3 class="route__heading">"К священному озеру Манас" на 5 дней</h3>
-                            <p class="route__duration">5 дней, 4 ночи</p>
-                            <p class="route__text">Ваше путешествие лежит на вершину горы к истоку реки Бийка. По пути
-                                вы
-                                заглянете в природную
-                                карстовую пещеру, попробуете себя в езде рысью, насладитесь ароматами лугов, тайги,
-                                приготовленной на костре пищей. После ночёвки на вершине, завтрака и радиальных выходов
-                                по
-                                желанию, вы двинетесь в обратный путь. Внизу, в кемпинге Бийка, вас будет ждать баня и
-                                посиделки
-                                у костра.
+                            <h3 class="route__heading">Однодневный тур, «Ознакомительный»</h3>
+                            <p class="route__duration">1 день</p>
+                            <p class="route__text">Каждый почувствует себя настоящим всадником, проехавшись рысью в логу
+                                реки Бийка. Вы посетит природную карстовую пещеру, поднимитесь на небольшую высоту, но и
+                                с этой высоты вам откроется необычайная панорама горных хребтов и долина
+                                красавицы-Катуни.
+                                По возвращении вы можете прогуляться на территории кемпинга Бийка, заказать
+                                расслабляющую баню либо сразу отправиться на место ночлега.
+
                             </p>
                             <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
-                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
-                            <p class="route__text"><strong>Стоимость:</strong> 10000 руб.</p>
+                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов</p>
+                            <p class="route__text"><strong>Стоимость:</strong> 4000 руб.</p>
                             <p class="route__text"><strong>Что входит в стоимость:</strong> услуги проводника, аренда
-                                лошади,
-                                прокат снаряжения
-                                (коврик, палатка), 3-разовое питание, групповая аптечка, страховка, баня.</p>
+                                лошади, прокат снаряжения (коврик, посуда), питание (обед), групповая аптечка,
+                                страховка, обед на природе. </p>
 
                             <p class="route__text"><strong>Что не входит в стоимость:</strong> трансфер, проживание в
                                 кемпинге
@@ -163,10 +161,9 @@
                             <a href="#order" class="main-button">Забронировать маршрут</a>
 
                         </div>
-                    </div>
+                    </article>
 
-
-                    <div class="route swiper-slide">
+                    <article class="route swiper-slide" id="route2">
 
                         <div class="route__images">
                             <div class="swiper route__gallery2">
@@ -206,17 +203,13 @@
                             </div>
                         </div>
                         <div class="route__description">
-                            <h3 class="route__heading">"К священному озеру Манас" на 5 дней</h3>
-                            <p class="route__duration">5 дней, 4 ночи</p>
+                            <h3 class="route__heading">Двухдневный тур, «Сказ неба»</h3>
+                            <p class="route__duration">2 дня, 1 ночь</p>
                             <p class="route__text">Ваше путешествие лежит на вершину горы к истоку реки Бийка. По пути
-                                вы
-                                заглянете в природную
-                                карстовую пещеру, попробуете себя в езде рысью, насладитесь ароматами лугов, тайги,
-                                приготовленной на костре пищей. После ночёвки на вершине, завтрака и радиальных выходов
-                                по
-                                желанию, вы двинетесь в обратный путь. Внизу, в кемпинге Бийка, вас будет ждать баня и
-                                посиделки
-                                у костра.
+                                вы заглянете в природную карстовую пещеру, попробуете себя в езде рысью, насладитесь
+                                ароматами лугов, тайги, приготовленной на костре пищей. После ночёвки на вершине,
+                                завтрака и радиальных выходов по желанию, вы двинетесь в обратный путь. Внизу, в
+                                кемпинге Бийка, вас будет ждать баня и посиделки у костра.
                             </p>
                             <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
                             <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
@@ -242,7 +235,354 @@
                             <a href="#order" class="main-button">Забронировать маршрут</a>
 
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="route swiper-slide" id="route3">
+
+                        <div class="route__images">
+                            <div class="swiper route__gallery3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div thumbsSlider="" class="swiper mySwiperRoute3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__description">
+                            <h3 class="route__heading">Трёхдневный тур, «Тропою марала» </h3>
+                            <p class="route__duration">3 дня, 2 ночи</p>
+                            <p class="route__text">Первый конный переход проходит вверх по реке Бийка к урочищу Андерек
+                                и одноименному ручью. Вы попадёте из берёзовой рощи в дремучий кедровый лес. На
+                                следующий день ваш путь лежит по красочной высокогорной долине в Амбарный лог, где вы
+                                встанете на ночлег, насладитесь восхитительными закатом и рассветом. Следующим утром
+                                после сборов и радиальных выходов (по желанию) вас ждёт обратный путь.
+                                По возвращении вы можете погулять на территории кемпинга Бийка, посидеть у костра,
+                                заказать жаркую или расслабляющую баню либо сразу отправиться на место своего ночлега.
+
+                            </p>
+                            <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
+                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
+                            <p class="route__text"><strong>Стоимость:</strong> 15000 руб.</p>
+                            <p class="route__text"><strong>Что входит в стоимость:</strong> услуги проводника, аренда
+                                лошади,
+                                прокат снаряжения
+                                (коврик, палатка), 3-разовое питание, групповая аптечка, страховка, баня.</p>
+
+                            <p class="route__text"><strong>Что не входит в стоимость:</strong> трансфер, проживание в
+                                кемпинге
+                                Бийка.</p>
+
+                            <p class="route__text">
+                                Каждый конный поход, кроме однодневного, подразумевает вечернее возвращение и баню. Если
+                                вы
+                                прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать
+                                ночёвку
+                                (в
+                                домике или в палатке) или вечерний трансфер.
+                            </p>
+
+                            <a href="#order" class="main-button">Забронировать маршрут</a>
+
+                        </div>
+                    </article>
+
+                    <article class="route swiper-slide" id="route4">
+
+                        <div class="route__images">
+                            <div class="swiper route__gallery4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div thumbsSlider="" class="swiper mySwiperRoute4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__description">
+                            <h3 class="route__heading">"К священному озеру Манас" на 5 дней</h3>
+                            <p class="route__duration">5 дней, 4 ночи</p>
+                            <p class="route__text">Одно из священных озёр по алтайским преданиям – озеро Манас. До озера
+                                можно добраться разными способами, в том числе и на автомобиле, но, согласитесь, пройти
+                                на коне той же тропой, что и древние алтайские кочевники, намного увлекательнее.
+                                Маршрут составлен таким образом, что другие группы встречаются очень редко, но зато
+                                встреча с лесными обитателями практически гарантирована.
+                                Перед началом путешествия для вас проведут вводный инструктаж и ознакомят с техникой
+                                безопасности на маршруте, познакомят с лошадьми и, по возможности, дадут выбрать ту,
+                                которая подходит вам.
+                                Затем вас ждет сложный процесс – отобрать только нужные для похода вещи и уложить их в
+                                арчемаки – переметные сумки, которые крепятся у седла. Маршрут первого дня повторяет
+                                путь коротких конных походов на один-три дня, но от этого не становится менее
+                                интересным. По пути вы заглянете в пещеру, полюбуетесь видами долины Катуни и горных
+                                хребтов Шебалинского района. Остановка на ночлег на вершине горы у истоков реки Бийка.
+                                Во второй день вы пройдете тропой из урочища Тящ-Мёщ по Куминскому хребту к вершине Куш,
+                                а оттуда на ночёвку в долину Кызыл-Гах у подножия перевала Тяман-Дион. Долина являет
+                                собой необъятный альпийский луг, иначе её называют Долиной шаманов – это место
+                                ритуальных камланий.
+                                На следующий день дорога идет через перевал Тяман-Ажу, откуда в ясную погоду видны
+                                предгорья Белухи. Здесь по местному обычаю нужно спешиться и попросить духов о милости и
+                                возложить свои камни к пирамидам «обо». После перехода через перевал вы вступаете в
+                                верховья реки Чемал, и здесь уже рукой подать до цели путешествия – озера Манас, в
+                                котором самые смелые могут искупаться. Мы говорим смелые, потому что, как известно, снег
+                                не тает в горах выше снеговой линии даже летом, а мы с вами подойдем к этой линии
+                                вплотную.
+                                На четвертый день ваша группа начнёт обратный путь и на исходе пятого дня возвратится в
+                                кемпинг Бийка налегке, с опустевшими арчемаками и уставшими, но повеселевшими от
+                                близости дома лошадьми.
+
+                            </p>
+                            <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
+                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
+                            <p class="route__text"><strong>Стоимость:</strong> 25000 руб.</p>
+                            <p class="route__text"><strong>Что входит в стоимость:</strong> услуги проводника, аренда
+                                лошади,
+                                прокат снаряжения
+                                (коврик, палатка), 3-разовое питание, групповая аптечка, страховка, баня.</p>
+
+                            <p class="route__text"><strong>Что не входит в стоимость:</strong> трансфер, проживание в
+                                кемпинге
+                                Бийка.</p>
+
+                            <p class="route__text">
+                                Каждый конный поход, кроме однодневного, подразумевает вечернее возвращение и баню. Если
+                                вы
+                                прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать
+                                ночёвку
+                                (в
+                                домике или в палатке) или вечерний трансфер.
+                            </p>
+
+                            <a href="#order" class="main-button">Забронировать маршрут</a>
+
+                        </div>
+                    </article>
+
+                    <article class="route swiper-slide" id="route5">
+
+                        <div class="route__images">
+                            <div class="swiper route__gallery5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div thumbsSlider="" class="swiper mySwiperRoute5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__description">
+                            <h3 class="route__heading">Шестидневный тур, «6 дней в горной тайге»</h3>
+                            <p class="route__duration">6 дней, 5 ночей</p>
+                            <p class="route__text">Маршрут рассчитан на людей, которым необходимо отдохнуть от работы, а
+                                также решить свои внутренние проблемы. Вы приобретёте себе новых друзей, испытаете
+                                отношения с партнёром на прочность, полюбите лошадей и научитесь им доверять. Этот тур
+                                для людей, которые просто хотят побывать наедине с природой и отдохнуть от шума городов.
+                                В первый день мы проведем вводный инструктаж и ознакомим с техникой безопасности на
+                                маршруте, познакомим с лошадьми и, по возможности, дадим выбрать ту, которая подходит
+                                вам.
+                                Конный маршрут идет вверх по правому притоку реки Бийка, по старой заброшенной дороге,
+                                все ближе и ближе к перевалу. По пути поднимаемся на экскурсию в пещеру, где, возможно,
+                                жили первобытные люди. Вокруг смешанный лес березы, пихта, множество кустарников. На
+                                вершине горы останавливаемся на ночлег и любуемся видами, закатом.
+                                День второй. Лесною тропой идём через урочище Тящ-Мещ по гриве Куминского хребта. Так
+                                как
+                                километраж перехода запланирован небольшой, идём неспеша, по пути останавливаемся чтобы
+                                сфотографировать окрестности. По логу Боросохон спускаемся к реке Куш (с алтайского —
+                                птица). Постепенно поднимаемся к её верховьям и встаем на ночлег под кронами могучих
+                                кедров.
+                                На третий день нас снова ждет небольшой переход, а на ночлег встаем в зоне Альпийских
+                                лугов, в долине Кызыл-Гах (с алт. «красная ягода»), она же Долина шаманов.
+                                На четвертый день, уже практически налегке, так как половина запасов съедена, лёгкой
+                                рысью выдвигаемся в путь к перевалу Тяман-Ажу (плохая дорога). На перевале захватывает
+                                дух от панорам гор, загадываем желание и спускаемся в долину реки Чемал с цветущими
+                                каждый месяц новыми цветами лугами. Спускаемся в долину Тогуз-Кель к плато девяти озер.
+                                На следующий день начинается обратный путь по тропе через лог Аюла и пастбища, где можно
+                                встретить табун-другой диких лошадей. Встаем на ночёвку у устья реки Эдиган.
+                                Последний переход вдоль берега красавицы Катуни, по нижним полям, можно уже
+                                расслабиться, так как лагерь уже в прямом смысле не за горами. По прибытию в лагерь
+                                можно прогуляться по лагерю, осмотреть курганы и древние наскальные рисунки —
+                                петроглифы, изображающие животных. Баня, костёр, ужин, после которых можно отправиться к
+                                своей гостинице или остаться на Бийке (по предварительной брони).
+
+                            </p>
+                            <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
+                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
+                            <p class="route__text"><strong>Стоимость:</strong> 30000 руб.</p>
+                            <p class="route__text"><strong>Что входит в стоимость:</strong> услуги проводника, аренда
+                                лошади,
+                                прокат снаряжения
+                                (коврик, палатка), 3-разовое питание, групповая аптечка, страховка, баня.</p>
+
+                            <p class="route__text"><strong>Что не входит в стоимость:</strong> трансфер, проживание в
+                                кемпинге
+                                Бийка.</p>
+
+                            <p class="route__text">
+                                Каждый конный поход, кроме однодневного, подразумевает вечернее возвращение и баню. Если
+                                вы
+                                прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать
+                                ночёвку
+                                (в
+                                домике или в палатке) или вечерний трансфер.
+                            </p>
+
+                            <a href="#order" class="main-button">Забронировать маршрут</a>
+
+                        </div>
+                    </article>
+
+                    <article class="route swiper-slide" id="route6">
+
+                        <div class="route__images">
+                            <div class="swiper route__gallery6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div thumbsSlider="" class="swiper mySwiperRoute6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/1.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/2.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/3.jpg"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/routes/5/4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__description">
+                            <h3 class="route__heading">"Сумультинский", семидневный тур с рыбалкой</h3>
+                            <p class="route__duration">7 дней, 6 ночей</p>
+                            <p class="route__text">Специально для тех, кто мечтает не только полюбоваться красотами
+                                Горного Алтая, но и порыбачить. С конца июля до 10 сентября на реке Сумульта можно
+                                осуществить свою мечту и поймать горную рыбу - хариуса. Конное путешествие проходит по
+                                отрогам живописного Сумультинского хребта. На пути - темнохвойная тайга, альпийские
+                                луга, высокогорная тундра, крутые спуски и подъёмы и около двадцати бродов под
+                                руководством опытных гидов-проводников, которые Вы преодолеете с лёгкостью.
+                            </p>
+                            <p class="route__text"><strong>Выезд:</strong> каждую пятницу, 9:00</p>
+                            <p class="route__text"><strong>Время в седле:</strong> 4-6 часов в день</p>
+                            <p class="route__text"><strong>Стоимость:</strong> 37000 руб.</p>
+                            <p class="route__text"><strong>Что входит в стоимость:</strong> услуги проводника, аренда
+                                лошади,
+                                прокат снаряжения
+                                (коврик, палатка), 3-разовое питание, групповая аптечка, страховка, баня.</p>
+
+                            <p class="route__text"><strong>Что не входит в стоимость:</strong> трансфер, проживание в
+                                кемпинге
+                                Бийка.</p>
+
+                            <p class="route__text">
+                                Каждый конный поход, кроме однодневного, подразумевает вечернее возвращение и баню. Если
+                                вы
+                                прибыли в наш кемпинг не на личном автомобиле, то рекомендуем заранее забронировать
+                                ночёвку
+                                (в
+                                домике или в палатке) или вечерний трансфер.
+                            </p>
+
+                            <a href="#order" class="main-button">Забронировать маршрут</a>
+
+                        </div>
+                    </article>
+
 
                 </div>
 
@@ -437,8 +777,8 @@
                             <option value="3">3 дня</option>
                             <option value="4">4 дня</option>
                             <option value="5">5 дней</option>
-                            <option value="6">6 дней</option>
-                            <option value="7">7 дней</option>
+                            <!--                            <option value="6">6 дней</option>-->
+                            <!--                            <option value="7">7 дней</option>-->
                             <option value="hours">почасовые прогулки</option>
                         </select>
                     </div>
@@ -505,8 +845,6 @@
 <script>
 
 
-
-
     var swiperAbout = new Swiper(".about__gallery", {
         grabCursor: true,
         effect: "creative",
@@ -528,15 +866,20 @@
         spaceBetween: 10,
         slidesPerView: 1,
         autoplay: false,
-        allowTouchMove: false
+        allowTouchMove: true,
+        autoHeight: true,
+        // effect: 'fade',
+        pagination: {
+            el: ".routes__buttons",
+            type: "custom",
+            // type: "bullets",
+            clickable: true,
+            bulletElement: "button",
+            bulletClass: "routes__button",
+            bulletActiveClass: "routes__button_active",
+            currentClass: "routes__button_active"
+        }
 
-        // pagination: {
-        //     // el: ".routes__buttons",
-        //     clickable: true
-        //     // renderBullet: function (index, className) {
-        //     //     return '<span class="' + className + '">' + (index + 1) + "</span>";
-        //     // },
-        // },
     });
 
     var swiperThumbs = new Swiper(".mySwiperRoute", {
@@ -555,11 +898,101 @@
         },
     });
 
+    var swiperThumbs2 = new Swiper(".mySwiperRoute2", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
 
+    var swiperImages2 = new Swiper(".route__gallery2", {
+        spaceBetween: 10,
+        autoplay: true,
+        loop: true,
+        thumbs: {
+            swiper: swiperThumbs2,
+        },
+    });
 
+    var swiperThumbs3 = new Swiper(".mySwiperRoute3", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
 
+    var swiperImages3 = new Swiper(".route__gallery3", {
+        spaceBetween: 10,
+        autoplay: true,
+        loop: true,
+        thumbs: {
+            swiper: swiperThumbs3,
+        },
+    });
 
+    var swiperThumbs4 = new Swiper(".mySwiperRoute4", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
 
+    var swiperImages4 = new Swiper(".route__gallery4", {
+        spaceBetween: 10,
+        autoplay: true,
+        loop: true,
+        thumbs: {
+            swiper: swiperThumbs4,
+        },
+    });
+
+    var swiperThumbs5 = new Swiper(".mySwiperRoute5", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    var swiperImages5 = new Swiper(".route__gallery5", {
+        spaceBetween: 10,
+        autoplay: true,
+        loop: true,
+        thumbs: {
+            swiper: swiperThumbs5,
+        },
+    });
+
+    var swiperThumbs6 = new Swiper(".mySwiperRoute6", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    var swiperImages6 = new Swiper(".route__gallery6", {
+        spaceBetween: 10,
+        autoplay: true,
+        loop: true,
+        thumbs: {
+            swiper: swiperThumbs6,
+        },
+    });
+    //
+    // var swiperThumbs7 = new Swiper(".mySwiperRoute7", {
+    //     spaceBetween: 10,
+    //     slidesPerView: 4,
+    //     freeMode: true,
+    //     watchSlidesProgress: true,
+    // });
+    //
+    // var swiperImages7 = new Swiper(".route__gallery7", {
+    //     spaceBetween: 10,
+    //     autoplay: true,
+    //     loop: true,
+    //     thumbs: {
+    //         swiper: swiperThumbs7,
+    //     },
+    // });
 
 
 </script>
