@@ -558,6 +558,7 @@ body {
   margin-left: 120px;
   margin-right: 120px;
   padding: 21px 20px;
+  position: relative;
 }
 .order__inner {
   border: 1px solid #ededed;
@@ -595,31 +596,20 @@ body {
   top: 0;
   left: 0;
 }
-.order__input_date::after {
-  position: absolute;
-  content: url("../img/icons/datepicker.svg");
-  top: 20px;
-  right: 30px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.order__input_date .order__input {
+  background: url("../img/icons/datepicker.svg") no-repeat top 20px right 30px;
 }
 .order__input_route {
   position: relative;
 }
-.order__input_route::after {
-  content: url("../img/icons/arrow-down.svg");
-  position: absolute;
-  top: 17px;
-  right: 34px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.order__select {
+  background: url("../img/icons/arrow-down.svg") no-repeat top 25px right 34px;
 }
 .order__select,
 .order__input_date + .order__input {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 .order__select::-ms-expand,
 .order__input_date + .order__input::-ms-expand {
