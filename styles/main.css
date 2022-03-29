@@ -117,23 +117,9 @@ input[type="radio"].visually-hidden {
   background-position: center;
   border-radius: 10px;
 }
-.route .mySwiper2 {
+.route .route__gallery {
   height: 80%;
   width: 100%;
-}
-.route .mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-.route .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.6;
-  border-radius: 10px;
-}
-.route .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
 }
 .route .swiper-slide img {
   display: block;
@@ -141,6 +127,20 @@ input[type="radio"].visually-hidden {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+.route .mySwiperRoute {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.route .mySwiperRoute .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.route .mySwiperRoute .swiper-slide-thumb-active {
+  opacity: 1;
 }
 .about__gallery .swiper-slide {
   border-radius: 10px;
