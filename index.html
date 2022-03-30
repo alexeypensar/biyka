@@ -130,8 +130,8 @@
                         <div class="route__description">
                             <h3 class="route__heading">Однодневный тур, «Ознакомительный»</h3>
                             <p class="route__duration">1 день</p>
-                            <p class="route__text">Каждый почувствует себя настоящим всадником, проехавшись рысью в логу
-                                реки Бийка. Вы посетит природную карстовую пещеру, поднимитесь на небольшую высоту, но и
+                            <p class="route__text">Каждый почувствуете себя настоящим всадником, проехавшись рысью в логу
+                                реки Бийка. Вы посетите природную карстовую пещеру, поднимитесь на небольшую высоту, но и
                                 с этой высоты вам откроется необычайная панорама горных хребтов и долина
                                 красавицы-Катуни.
                                 По возвращении вы можете прогуляться на территории кемпинга Бийка, заказать
@@ -623,14 +623,14 @@
                     <li class="about__offer">Осмотр обломков космических ракет, старой восстановленной дамбы</li>
                     <li class="about__offer">Услуги автомобиля УАЗ-Буханка</li>
                     <li class="about__offer">Гарантии безопасности: опытные и внимательные инструкторы-конюхи,
-                        безопасные маршруты, шлемы для верховой езды для каждого всадника.
+                        безопасные маршруты, шлемы для верховой езды для каждого всадника
                     </li>
                     <li class="about__offer">Страхование</li>
-                    <li class="about__offer">Удобный выезд к смотровым площадкам.
+                    <li class="about__offer">Удобный выезд к смотровым площадкам
                     </li>
-                    <li class="about__offer">Разумные цены.</li>
+                    <li class="about__offer">Разумные цены</li>
                     <li class="about__offer">Вводный инструктаж и техника безопасности перед началом путешествия,
-                        знакомство с лошадьми, возможность выбора подходящего вам животного.
+                        знакомство с лошадьми, возможность выбора подходящего вам животного
                     </li>
                 </ul>
             </article>
@@ -775,19 +775,17 @@
                             <option value="1">1 день</option>
                             <option value="2">2 дня</option>
                             <option value="3">3 дня</option>
-                            <option value="4">4 дня</option>
-                            <option value="5">5 дней</option>
-                            <!--                            <option value="6">6 дней</option>-->
-                            <!--                            <option value="7">7 дней</option>-->
+                            <option value="5">5 дня</option>
+                            <option value="6">6 дней</option>
+                            <option value="7">7 дней</option>
                             <option value="hours">почасовые прогулки</option>
                         </select>
                     </div>
-                    <!--                    <input type="text" class="order__input" placeholder="Маршрут (если выбрали)">-->
                 </div>
 
                 <div class="order__row">
-                    <input type="number" class="order__input" placeholder="Количество взрослых" required>
-                    <input type="number" class="order__input" placeholder="Количество детей">
+                    <input type="number" class="order__input" placeholder="Количество взрослых" min="1" step="1" required>
+                    <input type="number" class="order__input" placeholder="Количество детей" min="0" step="1">
                     <div class="order__input_date">
                         <input class="order__input" placeholder="Дата похода" type="text"
                                onfocus="(this.type='date')" id="date">
