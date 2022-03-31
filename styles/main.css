@@ -95,15 +95,13 @@ input[type="radio"].visually-hidden {
   transition: all 0.3s;
   opacity: 0.1;
 }
-.main-button:hover,
-.main-button:focus {
+.main-button:hover {
   transform: translateY(-5px);
   transition: all 0.3s ease;
   background-color: transparent;
   color: #fff;
 }
-.main-button:hover::before,
-.main-button:focus::before {
+.main-button:hover::before {
   width: 100%;
 }
 .route .swiper {
@@ -393,8 +391,7 @@ body {
   font-feature-settings: 'pnum' on, 'lnum' on;
   border: 2px solid #0c4e42;
 }
-.routes__button:hover,
-.routes__button:focus {
+.routes__button:hover {
   color: #0c4e42;
 }
 .routes__button_active {

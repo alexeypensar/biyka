@@ -81,7 +81,6 @@
             <button class="routes__button main-button" id="routeButton3">3 дня</button>
             <button class="routes__button main-button" id="routeButton4">5 дней</button>
             <button class="routes__button main-button" id="routeButton5">6 дней</button>
-            <!--            <button class="routes__button main-button">6 дней</button>-->
             <button class="routes__button main-button" id="routeButton6">7 дней</button>
         </div>
         <div class="routes__items">
@@ -900,6 +899,8 @@
         loop: true
     });
 
+    // todo убрать id ненужные у кнопок маршрутов и у самих маршрутов
+
     var swiperRoutes = new Swiper(".routes__gallery", {
         spaceBetween: 10,
         slidesPerView: 1,
@@ -909,16 +910,28 @@
         // effect: 'fade',
         pagination: {
             el: ".routes__buttons",
-            type: "custom",
-            // type: "bullets",
+            // type: "custom",
+            type: "bullets",
             clickable: true,
             bulletElement: "button",
-            bulletClass: "routes__button",
+            bulletClass: "routes__button main-button",
             bulletActiveClass: "routes__button_active",
-            currentClass: "routes__button_active"
+            currentClass: "routes__button_active",
+
         }
 
     });
+
+
+    // <div className="routes__buttons">
+    //     <button className="routes__button main-button" id="routeButton1">1 день</button>
+    //     <button className="routes__button main-button" id="routeButton2">2 дня</button>
+    //     <button className="routes__button main-button" id="routeButton3">3 дня</button>
+    //     <button className="routes__button main-button" id="routeButton4">5 дней</button>
+    //     <button className="routes__button main-button" id="routeButton5">6 дней</button>
+    //     <!--            <button class="routes__button main-button">6 дней</button>-->
+    //     <button className="routes__button main-button" id="routeButton6">7 дней</button>
+    // </div>
 
     var swiperThumbs = new Swiper(".mySwiperRoute", {
         spaceBetween: 10,
