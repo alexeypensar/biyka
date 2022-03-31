@@ -30,3 +30,5 @@ routesButtons[5].innerText = '7 дней';
 
 
 
+// sticky header__nav
+

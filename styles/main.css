@@ -303,6 +303,7 @@ body {
 }
 .header__nav {
   margin-top: 15px;
+  z-index: 10;
 }
 .header__links {
   display: flex;
@@ -390,6 +391,8 @@ body {
   width: 166px;
   font-feature-settings: 'pnum' on, 'lnum' on;
   border: 2px solid #0c4e42;
+  margin-left: 0;
+  margin-right: 0;
 }
 .routes__button:hover {
   color: #0c4e42;
