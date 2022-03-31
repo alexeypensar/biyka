@@ -30,6 +30,14 @@
 	.hours .hours__text {
 		width: 100%;
 	}
+
+	.about__info {
+		width: 100%;
+	}
+
+
+
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -69,10 +77,32 @@
 		background-size: fit;
 	}
 
+	.about__items {
+		flex-direction: column-reverse;
+	}
+
+	.about__gallery {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.about__text {
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.about__info {
+		margin-bottom: 20px;
+	}
+
 
 }
 
 @media screen and (max-width: 575.98px) {
+
+	html {
+		--section-padding: 50px;
+	}
 
 	.routes__buttons {
 		flex-wrap: wrap;
