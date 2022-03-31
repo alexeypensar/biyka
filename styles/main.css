@@ -737,6 +737,10 @@ body {
   .container {
     max-width: 1200px;
   }
+  .order__form {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 1199.98px) {
   .container {
@@ -744,6 +748,15 @@ body {
   }
   .routes__button {
     width: 120px;
+  }
+  .order__input {
+    width: 240px;
+  }
+  .order__input_date .order__input {
+    background-position: top 20px right 20px;
+  }
+  .order__select {
+    background-position: top 25px right 24px;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -768,6 +781,26 @@ body {
   }
   .information__goods:last-child {
     margin-top: 40px;
+  }
+  .order__inner {
+    padding: 25px 30px;
+  }
+  .order__row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .order__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .order__select {
+    width: 100%;
+  }
+  .order__input_date {
+    width: 100%;
+  }
+  .order__input_route {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -834,6 +867,12 @@ body {
   .routes__items .main-button {
     margin: 25px auto 0 auto;
     width: 100%;
+  }
+  .order__inner {
+    padding: 15px;
+  }
+  .order__form {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 430px) {
