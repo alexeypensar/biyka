@@ -787,9 +787,6 @@ body {
     width: 100%;
     margin-top: 25px;
   }
-  .hours {
-    background-size: fit;
-  }
   .about__items {
     flex-direction: column-reverse;
   }
@@ -803,6 +800,9 @@ body {
   }
   .about__info {
     margin-bottom: 20px;
+  }
+  .discount__text {
+    width: 100%;
   }
 }
 @media screen and (max-width: 575.98px) {
