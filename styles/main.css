@@ -425,7 +425,7 @@ body {
 .hours {
   padding-top: 75px;
   padding-bottom: 75px;
-  background: linear-gradient(to right, rgba(37,50,56,0.9) 0%, rgba(12,78,66,0.4) 50%, rgba(12,78,66,0.1) 100%), url("../img/hours-bg.jpg") no-repeat top left;
+  background: linear-gradient(to right, rgba(37,50,56,0.9) 0%, rgba(12,78,66,0.4) 50%, rgba(12,78,66,0.1) 100%), url("../img/hours-bg.jpg") no-repeat center center;
   background-size: cover;
 }
 .hours .section__heading {
@@ -751,6 +751,9 @@ body {
     width: 100px;
     height: 50px;
   }
+  .hours .hours__text {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -778,6 +781,9 @@ body {
     width: 100%;
     margin-top: 25px;
   }
+  .hours {
+    background-size: fit;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .routes__buttons {
@@ -799,5 +805,10 @@ body {
   .section__heading {
     font-size: 52px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section__heading {
+    font-size: 40px;
   }
 }
