@@ -82,7 +82,6 @@ input[type="radio"].visually-hidden {
   transform: translateY(0);
   transition: all 0.3s ease;
   border: 2px solid #fff;
-  margin: 560px auto 0 auto;
 }
 .main-button::before {
   content: "";
@@ -103,6 +102,9 @@ input[type="radio"].visually-hidden {
 }
 .main-button:hover::before {
   width: 100%;
+}
+.header .main-button {
+  margin: 560px auto 0 auto;
 }
 .route .swiper {
   width: 100%;
@@ -224,26 +226,6 @@ input[type="checkbox"]:checked + label:after {
 }
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
-}
-@media screen and (max-width: 1439.98px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-@media screen and (max-width: 1199.98px) {
-  .container {
-    max-width: 992px;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .container {
-    max-width: 576px;
-  }
 }
 html {
   scroll-behavior: smooth;
@@ -380,7 +362,7 @@ body {
 }
 .routes__buttons {
   width: 100%;
-  margin-top: -520px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -682,9 +664,6 @@ body {
   padding-top: 75px;
   padding-bottom: 36px;
 }
-main {
-  background: url("../img/footer-background.png") no-repeat bottom center, url("../img/footer-bg.png") no-repeat bottom center;
-}
 .footer__inner {
   display: flex;
   flex-direction: column;
@@ -750,4 +729,75 @@ main {
   text-align: center;
 /* white */
   color: #fff;
+}
+@media screen and (max-width: 1439.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .container {
+    max-width: 992px;
+  }
+  .routes__button {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .container {
+    max-width: 768px;
+  }
+  .routes__button {
+    width: 100px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    max-width: 576px;
+  }
+  .routes {
+    height: auto;
+  }
+  .route {
+    flex-direction: column;
+  }
+  .route__images {
+    margin-right: 0;
+    width: 100%;
+  }
+  .routes__button {
+    font-size: 14px;
+    width: 80px;
+    height: 45px;
+  }
+  .routes__buttons {
+    margin-bottom: 35px;
+  }
+  .route__description {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .routes__buttons {
+    flex-wrap: wrap;
+  }
+  .routes__button {
+    margin-bottom: 15px;
+    width: 30%;
+  }
+  .routes {
+    height: auto;
+  }
+  .routes__items .main-button {
+    margin: 25px auto 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .section__heading {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
 }

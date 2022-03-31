@@ -2,12 +2,17 @@
 	.container {
 		max-width: 1200px;
 	}
+
 }
 
 
 @media screen and (max-width: 1199.98px) {
 	.container {
 		max-width: 992px;
+	}
+
+	.routes__button {
+		width: 120px;
 	}
 }
 
@@ -16,16 +21,80 @@
 	.container {
 		max-width: 768px;
 	}
+
+	.routes__button {
+		width: 100px;
+		height: 50px;
+	}
 }
 
 @media screen and (max-width: 767.98px) {
 	.container {
 		max-width: 576px;
 	}
+	.routes {
+		height: auto;
+	}
+
+	.route {
+		flex-direction: column;
+	}
+
+	.route__images {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.routes__button {
+		font-size: 14px;
+		width: 80px;
+		height: 45px;
+
+	}
+	.routes__buttons {
+		margin-bottom: 35px;
+	}
+
+	.route__description {
+		width: 100%;
+		margin-top: 25px;
+	}
 }
 
 @media screen and (max-width: 575.98px) {
 
+	.routes__buttons {
+		flex-wrap: wrap;
+		//justify-content: space-around;
+	}
+
+	.routes__button {
+		margin-bottom: 15px;
+		width: 30%;
+
+	}
+
+	.routes {
+		height: auto;
+
+
+	}
+
+	.routes__items {
+		& .main-button {
+			margin: 25px auto 0 auto;
+			width: 100%;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 430px) {
+	.section__heading {
+		font-size: 52px;
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 319.98px) {

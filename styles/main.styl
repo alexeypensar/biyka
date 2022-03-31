@@ -3,7 +3,7 @@
 @import '__variables.styl';
 @import '__helpers.styl';
 @import '__animations.styl';
-@import '__adaptive.styl';
+
 
 html {
     scroll-behavior: smooth;
@@ -183,7 +183,8 @@ body {
 
 .routes__buttons {
     width: 100%;
-    margin-top: -520px;
+    margin-top: 30px;
+    //margin-top: -520px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -571,11 +572,13 @@ body {
     padding-bottom: 36px;
 }
 
-main {
-    background: url('../img/footer-background.png') no-repeat bottom center,
-            url('../img/footer-bg.png') no-repeat bottom center;
+//main {
+//    background: url('../img/footer-background.png') no-repeat bottom center,
+//            url('../img/footer-bg.png') no-repeat bottom center;
+//
+//}
 
-}
+//todo раскомментировать бэкграунд, когда закончишь адаптив
 
 
 .footer__inner {
@@ -663,3 +666,7 @@ main {
 
     color: #FFFFFF;
 }
+
+
+
+@import '__adaptive.styl';
