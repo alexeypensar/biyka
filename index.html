@@ -17,6 +17,28 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="favicon.svg">
 
+    <style>
+        @element html, body and (min-scroll-y: 100vh) {
+            .header__nav {
+                position: fixed;
+                top: 0;
+                background: white;
+                box-shadow: rgba(0,0,0,.1) 0 3px 15px;
+                margin-top: 0;
+                max-width: 100%;
+                z-index: 50;
+            }
+
+            .header__link_important {
+                margin-right: 600px;
+            }
+
+            .header__link_logo {
+                margin-right: 35px;
+            }
+        }
+    </style>
+
 
 </head>
 <body>
@@ -878,6 +900,8 @@
 
 <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.5.1/EQCSS.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.5.1/EQCSS-polyfills.min.js"></script>
 
 <script>
 
