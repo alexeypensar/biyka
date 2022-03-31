@@ -760,6 +760,15 @@ body {
   .about__info {
     width: 100%;
   }
+  .information__text {
+    flex-direction: column;
+  }
+  .information__goods {
+    width: 100%;
+  }
+  .information__goods:last-child {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -803,6 +812,9 @@ body {
   }
   .discount__text {
     width: 100%;
+  }
+  .information__item:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 575.98px) {
