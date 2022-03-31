@@ -1,3 +1,42 @@
+
+@media screen and (max-width: 1919.98px) {
+	.parallax {
+		&_last {
+			bottom: -200px;
+		}
+
+	}
+}
+
+@media screen and (max-width: 1758px) {
+	.parallax_third {
+		top: 264px;
+	}
+
+	.header__heading {
+		top: 84px;
+		line-height: 90%;
+	}
+
+	.header__subheading {
+		top: 375px;
+	}
+
+	.parallax_last {
+		display: none;
+	}
+
+	.routes {
+		margin-top: 250px;
+	}
+
+	.header .main-button {
+		margin-top: 420px;
+	}
+}
+
+
+
 @media screen and (max-width: 1439.98px) {
 	.container {
 		max-width: 1200px;
@@ -8,6 +47,33 @@
 		margin-right: 0;
 	}
 
+	.parallax_first, .parallax_third {
+		display: none;
+	}
+
+	.header {
+		min-height: 100vh;
+		margin-top: 0;
+		background: url('../img/bg-down2.png') no-repeat bottom -73px center,
+					url('../img/bg-up3.jpg') no-repeat top -280px center;
+
+	}
+
+	.header__heading {
+		top: 150px;
+	}
+
+	.header__subheading {
+		top: 430px;
+
+	}
+
+	.header .main-button {
+		margin-top: 500px;
+	}
+
+
+
 }
 
 
@@ -15,6 +81,7 @@
 	.container {
 		max-width: 992px;
 	}
+
 
 	.routes__button {
 		width: 120px;
@@ -31,6 +98,37 @@
 	.order__select {
 		background-position: top 25px right 24px;
 
+	}
+
+	.mobile__button {
+		display: block;
+	}
+
+	.mobile-menu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: auto;
+		height: 100vh;
+		background-color: $color-green;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 30px 60px !important;
+
+		& .header__link {
+			color: #FFF;
+			margin-bottom: 20px;
+		}
+
+		& .header__link_important {
+			margin-right: 0;
+		}
+
+
+		& .header__link_social svg {
+			fill: #FFF;
+		}
 	}
 
 
