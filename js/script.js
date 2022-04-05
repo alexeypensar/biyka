@@ -36,7 +36,6 @@ let mobileMenu = document.getElementById("mobileMenu");
 
 let mobileMenuLinks = Array.from(document.querySelectorAll("#mobileMenu a"));
 
-// mobileMenuLinks.push(Array.from(document.getElementsByClassName("header__link_social")));
 
 console.log(mobileMenuLinks);
 
@@ -54,4 +53,19 @@ mobileMenuLinks.forEach(function(el) {
         mobileMenu.classList.remove("mobile-menu_active");
     });
 });
+//
+//
+// let headerHeading = document.getElementsByClassName("header__heading");
+// let headerSubheading = document.getElementsByClassName("header__subheading");
+//
+// let detect = new MobileDetect(window.navigator.userAgent);
+//
+// let detectingMobile = function() {
+//     if(detect.mobile()) {
+//         headerHeading.classList.remove('parallax');
+//         headerSubheading.classList.remove('parallax');
+//     }
+// };
+//
+// detectingMobile();
 

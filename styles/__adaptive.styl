@@ -52,7 +52,8 @@
 	}
 
 	.header {
-		min-height: 100vh;
+		min-height: 900px;
+		//height: 600px;
 		margin-top: 0;
 		background: url('../img/bg-down2.png') no-repeat bottom -73px center,
 					url('../img/bg-up3.jpg') no-repeat top -280px center;
@@ -70,6 +71,10 @@
 
 	.header .main-button {
 		margin-top: 500px;
+	}
+
+	.routes {
+		margin-top: 50px;
 	}
 
 
@@ -350,6 +355,28 @@
 	}
 
 
+	.parallax {
+		position: absolute;
+		width: 100%;
+		transform: translateY(var(--translateY));
+		will-change: transform;
+
+		&_first {
+			display: none;
+		}
+
+		&_third {
+			display: none;
+		}
+
+		&_last {
+			display: none;
+		}
+	}
+
+
+
+
 }
 
 
@@ -397,7 +424,7 @@
 		padding: 10px;
 	}
 	.section__heading {
-		font-size: 52px;
+		font-size: 48px;
 		margin-bottom: 30px;
 	}
 
