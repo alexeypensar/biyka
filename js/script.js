@@ -53,19 +53,16 @@ mobileMenuLinks.forEach(function(el) {
         mobileMenu.classList.remove("mobile-menu_active");
     });
 });
-//
-//
-// let headerHeading = document.getElementsByClassName("header__heading");
-// let headerSubheading = document.getElementsByClassName("header__subheading");
-//
-// let detect = new MobileDetect(window.navigator.userAgent);
-//
-// let detectingMobile = function() {
-//     if(detect.mobile()) {
-//         headerHeading.classList.remove('parallax');
-//         headerSubheading.classList.remove('parallax');
-//     }
-// };
-//
-// detectingMobile();
 
+
+function get_ya_browser(){
+    let ua = navigator.userAgent;
+    if (ua.search(/YaBrowser/) > 0) {
+        return document.getElementById('headerShape').style.display = "none";
+    }
+
+}
+
+// let browser = get_ya_browser();
+
+get_ya_browser();
