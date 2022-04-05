@@ -822,13 +822,13 @@ main {
   .header {
     min-height: 900px;
     margin-top: 0;
-    background: url("../img/bg-down2.png") no-repeat bottom -73px center, url("../img/bg-up3.jpg") no-repeat top -280px center;
+    background: url("../img/bg-down2.png") no-repeat bottom 7px center, url("../img/bg-up3.jpg") no-repeat top -280px center;
   }
   .header__heading {
     top: 150px;
   }
   .header__subheading {
-    top: 430px;
+    top: 368px;
   }
   .header .main-button {
     margin-top: 500px;
