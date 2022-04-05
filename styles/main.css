@@ -858,6 +858,11 @@ main {
     z-index: 99999;
     background-color: #fff;
   }
+  .header .main-button {
+    margin-top: 0;
+    position: relative;
+    top: 560px;
+  }
   .mobile-menu {
     position: absolute;
     top: 0;
