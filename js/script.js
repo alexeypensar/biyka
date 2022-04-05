@@ -29,6 +29,29 @@ routesButtons[4].innerText = '6 дней';
 routesButtons[5].innerText = '7 дней';
 
 
+let mobileMenuButton = document.getElementById("mobileMenuButton");
+let mobileMenuCloseButton = document.getElementById("mobileMenuCloseButton");
 
-// sticky header__nav
+let mobileMenu = document.getElementById("mobileMenu");
+
+let mobileMenuLinks = Array.from(document.querySelectorAll("#mobileMenu a"));
+
+// mobileMenuLinks.push(Array.from(document.getElementsByClassName("header__link_social")));
+
+console.log(mobileMenuLinks);
+
+
+mobileMenuButton.addEventListener('click', function() {
+    mobileMenu.classList.add("mobile-menu_active");
+});
+
+mobileMenuCloseButton.addEventListener('click', function() {
+    mobileMenu.classList.remove("mobile-menu_active");
+});
+
+mobileMenuLinks.forEach(function(el) {
+    el.addEventListener('click', function() {
+        mobileMenu.classList.remove("mobile-menu_active");
+    });
+});
 

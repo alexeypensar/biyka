@@ -849,14 +849,18 @@ main {
   }
   .mobile__button {
     display: block;
+    right: 15px;
   }
   .header__links {
     position: fixed;
     top: 0;
     left: 0;
-    height: 65px;
+    height: 60px;
     z-index: 99999;
     background-color: #fff;
+    -webkit-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.11);
+    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.11);
   }
   .header .main-button {
     margin-top: 0;
@@ -870,10 +874,13 @@ main {
     width: auto;
     height: 100vh;
     background-color: #0c4e42;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 30px 60px !important;
+    padding: 50px 60px 30px 60px !important;
+  }
+  .mobile-menu_active {
+    display: flex;
   }
   .mobile-menu .header__link {
     color: #fff;
@@ -898,6 +905,35 @@ main {
   .mobile-menu .header__link_phone {
     margin-right: 0;
     margin-top: 10px;
+  }
+  .header__link_order {
+    position: relative;
+    right: -60px;
+  }
+  .mobile-menu__close {
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    display: flex;
+    padding: 0;
+    transform: rotate(45deg);
+  }
+  .mobile-menu__close::after {
+    content: '';
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    transform: rotate(-90deg);
   }
   .header__link_mobile {
     display: inline-block;
