@@ -104,6 +104,16 @@
 		display: block;
 	}
 
+	.header__links {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 65px;
+		z-index: 99999;
+		background-color: #fff;
+
+	}
+
 	.mobile-menu {
 		position: absolute;
 		top: 0;
@@ -118,17 +128,42 @@
 
 		& .header__link {
 			color: #FFF;
-			margin-bottom: 20px;
+			display: flex;
+			margin-bottom: 15px;
 		}
 
 		& .header__link_important {
 			margin-right: 0;
 		}
 
+		& .header__link_social {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 15px;
+			text-decoration: none;
+		}
+
 
 		& .header__link_social svg {
 			fill: #FFF;
+			margin-top: 0;
+
 		}
+
+		& .header__link_phone {
+			margin-right: 0;
+			margin-top: 10px;
+		}
+	}
+
+	.header__link_mobile {
+		display: inline-block;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 500;
+		padding-left: 10px;
 	}
 
 
