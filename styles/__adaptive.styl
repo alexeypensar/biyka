@@ -173,8 +173,9 @@
 	}
 
 	.header__link_order {
-		position: relative;
-		right: -60px;
+		position: absolute;
+		right: 80px;
+		top: 20px;
 		//margin-right: 5px;
 	}
 
@@ -351,6 +352,13 @@
 
 }
 
+
+@media screen and (max-width: 592px) {
+	.header__heading {
+		font-size: 80px;
+	}
+}
+
 @media screen and (max-width: 575.98px) {
 
 	html {
@@ -397,6 +405,10 @@
 		font-size: 32px;
 	}
 
+	.header__link_order {
+		display: none;
+	}
+
 }
 
 
@@ -412,6 +424,9 @@
 
 	.footer__phone {
 		margin-bottom: 35px;
+	}
+	.header__heading {
+		font-size: 60px;
 	}
 }
 
